@@ -1,0 +1,76 @@
+
+@font-face 
+{
+    font-family: "Goldoni";
+    src: url(../fonts/GOLDONI_DEMO.OTF) format("opentype");
+  
+}
+
+
+
+
+body 
+{ 
+    padding-top: 75px; 
+    font-family: "Goldoni", Verdana, Tahoma !important;
+        color:black;
+}
+
+li.registrar
+{
+    margin-bottom: 5px;
+}
+
+a.registrar
+{
+    font-size: 12px;
+}
+
+
+a.submenu{
+
+    font-size: 20px;
+}
+
+
+a.dropdown-toggle{
+ margin-left: 15px;
+    font-size: 20px;
+    color:#424049;
+
+}
+
+
+a.menu
+{
+    margin-left: 15px;
+    text-align: center;
+    font-size: 20px;
+    color:#424049;
+}
+
+#menu_menu li + li:before
+{
+     
+    content: "";
+}
+
+tr > td
+{
+  padding-bottom: 10px;
+}
+
+
+.menuprop
+{
+    display: none;
+    overflow: hidden;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+    top: 59px !important;
+    /*width: 250px !important;*/
+    text-align: left;
+    position: fixed !important; /* Para que este arriba */
+    border: 1px solid #2f2f2f;
+}
