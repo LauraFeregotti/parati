@@ -1,80 +1,126 @@
-<html >
+<!DOCTYPE html>
+
+<html>
+
 <head>
-    <title>ParaTi</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ParaTi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    
     <meta charset="UTF-8">
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+
+
+    <style>
+        .barradebuscar{
+        margin-left: 555px;
+        margin-bottom: 4px;
+    }
+    .barra{
+        margin-top: 34px;
+    }
+    .registrar{
+        margin-right: 33px;
+    }
+   .paddingbarralateral{
+       padding-bottom: 10px;
+   }
+   
+    </style>
 </head>
 
 <body style="background-color:rgba(255, 255, 255, 0.5); background-image:url(images/background2.jpg);">
 
-    
+
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <div style="padding-top:5px;">
-                <a href="#" id="logo-img" class="navbar-left"><img src="images/logo.png" width="200" height="60"></a>
+                <div style="padding-top: 5px;">
+                    <a href="#" id="logo-img" class="navbar-left"><img src="images/logo.png" width="200px;" height="60px;"></a>
                 </div>
-                
+
             </div>
 
-  
+
 
             <div id="navbar" class="navbar-collapse collapse">
 
-<ul class="navbar-nav">
-<li class="nav-item">
-        <a class="nav-link" href="#"><img src="images/barrabuscar.png" width="205.716 px" height="21 px"style="margin-left:400;margin-top:45px;"></a>
-      </li>
-</ul>
+                <ul class="navbar-nav">
+                    <li class="nav">
+                        <a class="nav-link barradebuscar" href="#"> <img src="images/barrabuscar.png" class="barra">
+                        </a>
+                    </li>
+                </ul>
 
                 <div class="nav navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo.png" width="20" height="20"></a></li>
-                        <li><a href="https://www.facebook.com"><img src="images/socials/facebook-logo.png" width="20" height="20"></a></li>
-                        <li><a href="https://www.instagram.com"><img src="images/socials/instagram-logo.png" width="20" height="20"></a></li>
-                        <li><a href="https://www.twitch.com"><img src="images/socials/pinterest-logo.png" width="20" height="20"></a></li>
-                        <li><a href="https://plus.google.com"><img src="images/socials/google-plus-logo.png" width="20" height="20"></a></li>
+                        <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo.png" width="20"
+                                    height="20"></a></li>
+                        <li><a href="https://www.facebook.com"><img src="images/socials/facebook-logo.png" width="20"
+                                    height="20"></a></li>
+                        <li><a href="https://www.instagram.com"><img src="images/socials/instagram-logo.png" width="20"
+                                    height="20"></a></li>
+                        <li><a href="https://www.twitch.com"><img src="images/socials/pinterest-logo.png" width="20"
+                                    height="20"></a></li>
+                        <li><a href="https://plus.google.com"><img src="images/socials/google-plus-logo.png" width="20"
+                                    height="20"></a></li>
                         <div></div>
-                        <li id="Usuario" class="registrar pull-right"><span id="spanUsuario">REGISTRATE/INICIAR SESION</span> <img id="carrito" src="images/carrito.png" width="20" height="20"style="margin-left:10;"></img></li>
+                        <li id="Usuario" class="registrar pull-right"><span id="spanUsuario">REGISTRATE/INICIAR SESION</span>
+                            <img id="carrito" src="images/carrito.png" width="20" height="20" style="margin-left:10;"></img></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        </div>
     </nav>
 
     <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Registrarse</h4>
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Registrarse</h4>
+                </div>
+                <div class="modal-body">
+                    <form id="InfroText" method="POST">
+
+                        <input type="hidden" name="InfroText" value="1">
+
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>Nombre</td>
+                                    <td><input type="text" name="title" id="nombreField" style="width:170px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Usuario&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                    <td><input type="text" name="title" id="usernameField" style="width:170px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Clave</td>
+                                    <td><input type="password" name="password" id="title" style="width:170px"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td><input type="text" name="title" id="title" style="width:170px"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary registrarButton" style="background-color:#424049; border: 0 none; ">Registrarse</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-            <form id="InfroText" method="POST">
-        
-            <input type="hidden" name="InfroText" value="1">
-        
-            <table>
-                <tbody>
-                    <tr><td>Nombre</td><td><input type="text" name="title" id="nombreField" style="width:170px"></td></tr>
-                    <tr><td>Usuario&nbsp;&nbsp;&nbsp;&nbsp;</td><td><input type="text" name="title" id="usernameField" style="width:170px"></td></tr>
-                    <tr><td>Clave</td><td><input type="password" name="password" id="title" style="width:170px"></td></tr>
-                    <tr><td>Email</td><td><input type="text" name="title" id="title" style="width:170px"></td></tr>
-                </tbody>
-            </table>
-            </form>
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary registrarButton"style="background-color:#424049; border: 0 none; ">Registrarse</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
-        </div>
-        </div>
-    </div>
     </div>
 
 
@@ -82,43 +128,48 @@
         <div class="row">
             <div id="pagina" class="col-sm-11 col-md-11">
 
-            <div id="pagina-principal">
-                <div style="padding-top:20px;">
-                <div id="carousel-principal" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
-                        <ol class="carousel-indicators" style="bottom: -35px !important;">
-                            <li data-target="#carousel-principal" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-principal" data-slide-to="1" class=""></li>
-                            <li data-target="#carousel-principal" data-slide-to="2" class=""></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox" style="height: 500px !important;">
-                            <div class="item next left">
-                                <img id="clickImgCarousel" src="images/scroll/1.jpg" data-holder-rendered="true" class="img-responsive" height="500px" style="object-fit: contain;">
-                            </div>
-                            <div class="item">
-                                <img src="images/scroll/2.jpg" data-holder-rendered="true" class="img-responsive" style="object-fit: contain;">
-                            </div>
-                            <div class="item active left">
-                                <img src="images/scroll/3.jpg" data-holder-rendered="true" class="img-responsive" height="500px" style="object-fit: contain;">
+                <div id="pagina-principal">
+                    <div style="padding-top:20px;">
+                        <div id="carousel-principal" class="carousel slide" data-ride="carousel" style="width:100%;"
+                            data-interval="3000">
+                            <ol class="carousel-indicators" style="bottom: -35px !important;">
+                                <li data-target="#carousel-principal" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-principal" data-slide-to="1" class=""></li>
+                                <li data-target="#carousel-principal" data-slide-to="2" class=""></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox" style="height: 500px !important;">
+                                <div class="item next left">
+                                    <img id="clickImgCarousel" src="images/scroll/1.jpg" data-holder-rendered="true"
+                                        class="img-responsive" height="500px" style="object-fit: contain;">
+                                </div>
+                                <div class="item">
+                                    <img src="images/scroll/2.jpg" data-holder-rendered="true" class="img-responsive"
+                                        style="object-fit: contain;">
+                                </div>
+                                <div class="item active left">
+                                    <img src="images/scroll/3.jpg" data-holder-rendered="true" class="img-responsive"
+                                        height="500px" style="object-fit: contain;">
+                                </div>
                             </div>
                         </div>
-                </div>
-                </div>
-                <br>
-              
-                 <img id="corazon" src="images/corazon.png" class="pull-right" width="60" height="60"style="margin-left:10;"></img>
-              
-               
-               
-                <br>
- 
+                    </div>
+                    <br>
 
 
 
-                 <div style="text-align: center; font-size: 30px;padding-top:50px">
-                    <span>LO MAS NUEVO</span>
-                    <hr>
-                </div>
-                <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
+                    <img id="corazon" src="images/corazon.png" class="pull-right" width="60px;" height="60px;" style="margin-left:10px;">
+
+                    <br>
+
+
+
+
+                    <div style="text-align: center; font-size: 30px;padding-top:50px">
+                        <span>LO MAS NUEVO</span>
+                        <hr>
+                    </div>
+                    <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
+                        data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
                             <li data-target="#carousel-tendencias" data-slide-to="0" class=""></li>
                             <li data-target="#carousel-tendencias" data-slide-to="1" class="active"></li>
@@ -157,7 +208,7 @@
                                     </div>
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img src="images/lomasnuevo/foto2.png"class="img-responsive">
+                                            <img src="images/lomasnuevo/foto2.png" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
@@ -173,17 +224,18 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
 
-                <br>
-                <br>
+                    <br>
+                    <br>
 
 
-                <div style="text-align: center; font-size: 30px;">
-                    <span>TENDENCIAS</span>
-                    <hr>
-                </div>
-                <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
+                    <div style="text-align: center; font-size: 30px;">
+                        <span>TENDENCIAS</span>
+                        <hr>
+                    </div>
+                    <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
+                        data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
                             <li data-target="#carousel-tendencias" data-slide-to="0" class=""></li>
                             <li data-target="#carousel-tendencias" data-slide-to="1" class="active"></li>
@@ -238,16 +290,17 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
 
-                <br>
-                <br>
+                    <br>
+                    <br>
 
-                <div style="text-align: center; font-size: 30px;">
-                    <span>LO MAS DESTACADO</span>
-                    <hr>
-                </div>
-                <div id="carousel-destacado" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
+                    <div style="text-align: center; font-size: 30px;">
+                        <span>LO MAS DESTACADO</span>
+                        <hr>
+                    </div>
+                    <div id="carousel-destacado" class="carousel slide" data-ride="carousel" style="width:100%;"
+                        data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
                             <li data-target="#carousel-destacado" data-slide-to="0" class=""></li>
                             <li data-target="#carousel-destacado" data-slide-to="1" class="active"></li>
@@ -302,16 +355,17 @@
                                 </div>
                             </div>
                         </div>
-                </div>
+                    </div>
 
-                <br>
-                <br>
+                    <br>
+                    <br>
 
-                <div style="text-align: center; font-size: 30px;">
-                    <span>VIDEOS</span>
-                    <hr>
-                </div>
-                <div id="carousel-videos" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
+                    <div style="text-align: center; font-size: 30px;">
+                        <span>VIDEOS</span>
+                        <hr>
+                    </div>
+                    <div id="carousel-videos" class="carousel slide" data-ride="carousel" style="width:100%;"
+                        data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
                             <li data-target="#carousel-videos" data-slide-to="0" class=""></li>
                             <li data-target="#carousel-videos" data-slide-to="1" class="active"></li>
@@ -366,153 +420,155 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
                 </div>
 
-            </div>
+                <div id="pagina-usuario">
 
-            <div id="pagina-usuario">
+                    <div id="perfilEncabezado">
 
-                <div id="perfilEncabezado">
-                
-<div style="padding-top:20px;">
-                <img class="img-circle" src="images/perfil/perfil.jpg" width="50px" height="50px" >
+                        <div style="padding-top:20px;">
+                            <img class="img-circle" src="images/perfil/perfil.jpg" width="50px" height="50px">
 
-                <span id="perfilUsuario"></span>
+                            <span id="perfilUsuario"></span>
 
-</div>
-                </div>
-<div style="padding-top:15px;">
-                <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group"> 
-                    <span id="clickMeGustan" class="btn btn-primary-outline" role="button">ME GUSTAN</span>
-                    <span id="clickNotasParaMi" class="btn btn-default" role="button">NOTAS PARA MI</span>
-                    <span id="clickCompras" class="btn btn-default" role="button">COMPRAS</span> 
+                        </div>
+                    </div>
+                    <div style="padding-top:15px;">
+                        <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
+                            <span id="clickMeGustan" class="btn btn-primary-outline" role="button">ME GUSTAN</span>
+                            <span id="clickNotasParaMi" class="btn btn-default" role="button">NOTAS PARA MI</span>
+                            <span id="clickCompras" class="btn btn-default" role="button">COMPRAS</span>
+                        </div>
+
+                        <!-- me gustan -->
+                        <div id="megustan">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/1.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/2.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/3.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/4.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/5.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/megustan/6.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fin me gustan -->
+
+                        <!-- notas para mi -->
+                        <div id="notasparami">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/1.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/2.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/3.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/4.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/5.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/6.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/7.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/notasparami/8.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fin notas para mi -->
+
+                        <!-- compras -->
+                        <div id="compras">
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/compras/1.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/compras/2.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/compras/3.png" class="img-responsive">
+                                    </a>
+                                </div>
+                                <div class="col-xs-3">
+                                    <a href="#" class="thumbnail">
+                                        <img src="images/perfil/compras/4.png" class="img-responsive">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- fin compras -->
+
+                    </div>
                 </div>
 
-                <!-- me gustan -->
-                <div id="megustan">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/1.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/2.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/3.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/4.png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/5.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/megustan/6.png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <!-- fin me gustan -->
+                <div id="pagina-protagonista">
 
-                <!-- notas para mi -->
-                <div id="notasparami">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/1.png" class="img-responsive">
-                        </a>
+                    <div style="text-align: left; font-size: 35px;padding-top:20px;">
+                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
+                            PROTAGONISTA</span>
+                        <hr>
                     </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/2.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/3.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/4.png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/5.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/6.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/7.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/notasparami/8.png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <!-- fin notas para mi -->
-
-                <!-- compras -->
-                <div id="compras">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/compras/1.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/compras/2.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/compras/3.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/perfil/compras/4.png" class="img-responsive">
-                        </a>
-                    </div>
-                </div>
-                </div>
-                <!-- fin compras -->
-
-</div>
-            </div>
-
-            <div id="pagina-protagonista">
-
-                 <div style="text-align: left; font-size: 35px;padding-top:20px;">
-                    <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span> PROTAGONISTA</span>
-                    <hr>
-                </div>
-                <div id= "carousel-destacado" class="carousel slide" data-ride="carousel" style="width:100%;"  data-interval="3000">
+                    <div id="carousel-destacado" class="carousel slide" data-ride="carousel" style="width:100%;"
+                        data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
                             <li data-target="#carousel-destacado" data-slide-to="0" class=""></li>
                             <li data-target="#carousel-destacado" data-slide-to="1" class="active"></li>
@@ -522,7 +578,7 @@
                                 <div class="row">
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img id="NOTA"src="images/protagonista/foto3.png" class="img-responsive">
+                                            <img id="NOTA" src="images/protagonista/foto3.png" class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
@@ -567,109 +623,111 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-            </div>
-
-            <div id="pagina-fotoCarousel">
-                
-                <div class="row">
-                   <div style="padding-top:25px; padding-right:100px;">
-                <div class="col-md-2">
-                    <img src="images/imagenprincipal/foto1.png"  >
-                </div>
-                      </div>
-                       <div style="padding-left:325px; width:1400px;">
-                <div class="col-md-8">
-                    <img src="images/imagenprincipal/foto2.jpg" class="img-responsive" >            
-                </div>
-                 </div>
-            </div>
-                
-            </div>
-
-            <div id="pagina-carrito">
-            <div style="text-align: left; font-size: 25px;padding-top:25;">
-               <u> <span> MI CARRITO DE COMPRAS </span> </u>
-                
-                <img src= "images/total.png" class="img-responsive center-block" />
-                    <hr>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/carritodecompras/1.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/carritodecompras/2.png" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="#" class="thumbnail">
-                            <img src="images/carritodecompras/3.png" class="img-responsive">
-                        </a>
                     </div>
                 </div>
 
-            </div>
+                <div id="pagina-fotoCarousel">
 
-            <div id="pagina-NOTA">
+                    <div class="row">
+                        <div style="padding-top:25px; padding-right:100px;">
+                            <div class="col-md-2">
+                                <img src="images/imagenprincipal/foto1.png">
+                            </div>
+                        </div>
+                        <div style="padding-left:325px; width:1400px;">
+                            <div class="col-md-8">
+                                <img src="images/imagenprincipal/foto2.jpg" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
 
-
-<div style="text-align: left; font-size: 25px;padding-top:25;">
-               <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span> PROTAGONISTA</span><img id="flecha" src="images/flechita.png" width="20" height="20"></img><span> MODA SUSTENTABLE</span>
-                
-            
-                    <hr>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/nota/foto2.jpg" class="img-responsive">
-                        </a>
+                <div id="pagina-carrito">
+                    <div style="text-align: left; font-size: 25px;padding-top:25;">
+                        <u> <span> MI CARRITO DE COMPRAS </span> </u>
+
+                        <img src="images/total.png" class="img-responsive center-block" />
+                        <hr>
                     </div>
-                   
-                    <div class="col-md-8">
-                        <a href="#" class="thumbnail">
-                            <img src="images/nota/textonota.png" class="img-responsive" width:150px;>
-                        </a>
+
+                    <div class="row">
+                        <div class="col-xs-3">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/carritodecompras/1.png" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="thumbnail">
+                                <img src="images/carritodecompras/2.png" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-xs-3">
+                            <a href="#" class="thumbnail">
+                                <img src="images/carritodecompras/3.png" class="img-responsive">
+                            </a>
+                        </div>
                     </div>
-                     
-                    
+
                 </div>
 
-                <div class="row">
- <div class="col-md-3">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/nota/foto1.jpg" class="img-responsive">
-                        </a>
+                <div id="pagina-NOTA">
+
+
+                    <div style="text-align: left; font-size: 25px;padding-top:25;">
+                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
+                            PROTAGONISTA</span><img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
+                            MODA SUSTENTABLE</span>
+
+
+                        <hr>
                     </div>
-                    <div class="col-md-8">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/nota/comentarnota.png" class="img-responsive">
-                        </a>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/nota/foto2.jpg" class="img-responsive">
+                            </a>
+                        </div>
+
+                        <div class="col-md-8">
+                            <a href="#" class="thumbnail">
+                                <img src="images/nota/textonota.png" class="img-responsive" width:150px;>
+                            </a>
+                        </div>
+
+
                     </div>
-<div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/nota/foto3.jpg" class="img-responsive">
-                        </a>
-                    </div>
-                    <div class="col-md-4">
-                        <a href="#" class="thumbnail">
-                        
-                            <img src="images/nota/foto4.jpg" class="img-responsive">
-                        </a>
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/nota/foto1.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/nota/comentarnota.png" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/nota/foto3.jpg" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#" class="thumbnail">
+
+                                <img src="images/nota/foto4.jpg" class="img-responsive">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
             </div>
 
@@ -679,54 +737,57 @@
             </div>
 
             <div class="col-sm-1">
-                
-                <div style="padding:20px;background-color:#C9B8C3;width:150px;">
 
-                <div class="row">
-                    
-                    <ul id="menu_menu" class="nav navbar-nav nav-pills">
+                <div style="padding:20px; background-color:#C9B8C3; width:150px; margin-left:22px;">
 
-<li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODA
-        <span class="caret"></span> </a>
-        <ul class="dropdown-menu">
-          <li><a id="clickModa" class="submenu" href="#">protagonista</a></li>
-          <li><a class="submenu" href="#">editoriales</a></li>
-          <li><a class="submenu" href="#">imprescindibles</a></li>
-        </ul>
-      </li>
-                        
-                        <li><a class="menu" href="#">Belleza</a></li> 
-                               
-                        <li><a class="menu" href="#">Cocina</a></li>
-                        
-                        <li><a class="menu" href="#">Deco</a></li>
-                         
-                        <li><a class="menu" href="#">Mama</a></li>
-                         
-                        <li><a class="menu" href="#">Novias</a></li>  
-                             
-                        <li><a class="menu" href="#">Tejidos</a></li>
-                         
-                        <li><a class="menu" href="#">Noticias</a></li>
-                    </ul>
-               
+                    <div class="row">
+
+                        <ul id="menu_menu" class="nav navbar-nav nav-pills ">
+
+                            <li class="dropdown paddingbarralateral ">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODA
+                                    <span class="caret"></span> </a>
+                                <ul class="dropdown-menu modadropdown">
+                                    <li><a id="clickModa" class="submenu" href="#">protagonista</a></li>
+                                    <li><a class="submenu" href="#">editoriales</a></li>
+                                    <li><a class="submenu" href="#">imprescindibles</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Belleza</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Cocina</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Deco</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Mama</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Novias</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Tejidos</a></li>
+
+                            <li class="paddingbarralateral"><a class="menu " href="#">Noticias</a></li>
+                        </ul>
+
+                    </div>
+
                 </div>
 
-                </div>
-                
-             </div>
+            </div>
 
         </div>
     </div>
-            <footer>
-                  <div style="padding-top:150px;">
-                <img src="images/footer/foto1.png" class="img-responsive">
-            </footer>
+    <footer>
+        <div style="padding-top:150px;">
+            <img src="images/footer/foto1.png" class="img-responsive">
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+        window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')
+    </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
+
 </html>
