@@ -3,13 +3,13 @@
 <html>
 
 <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>ParaTi</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-        <script src="main.js"></script>
-    
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ParaTi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+
     <meta charset="UTF-8">
 
     <!-- Bootstrap -->
@@ -18,31 +18,34 @@
 
 
     <style>
-        .barradebuscar{
-        margin-left: 555px;
-        margin-bottom: 4px;
-    }
-    .barra{
-        margin-top: 34px;
-    }
-    .registrar{
-        margin-right: 33px;
-    }
-   .paddingbarralateral{
-       padding-bottom: 10px;
-   }
-   
+        .barradebuscar {
+            margin-left: 555px;
+            margin-bottom: 4px;
+        }
+
+        .barra {
+            margin-top: 34px;
+        }
+
+        .registrar {
+            margin-right: 33px;
+        }
+
+        .paddingbarralateral {
+            padding-bottom: 10px;
+        }
     </style>
 </head>
 
-<body style="background-color:rgba(255, 255, 255, 0.5); background-image:url(images/background2.jpg);">
+<body style="background-color:rgba(255, 255, 255, 0.5); background-image:url(images/background2.jpg) ; background-attachment: fixed;">
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
                 <div style="padding-top: 5px;">
-                    <a href="#" id="logo-img" class="navbar-left"><img src="images/logo.png" width="200px;" height="60px;"></a>
+                    <a href="#" id="logo-img" class="navbar-left"><img src="images/logo.png" width="200px;"
+                            height="60px;"></a>
                 </div>
 
             </div>
@@ -71,8 +74,10 @@
                         <li><a href="https://plus.google.com"><img src="images/socials/google-plus-logo.png" width="20"
                                     height="20"></a></li>
                         <div></div>
-                        <li id="Usuario" class="registrar pull-right"><span id="spanUsuario">REGISTRATE/INICIAR SESION</span>
-                            <img id="carrito" src="images/carrito.png" width="20" height="20" style="margin-left:10; padding-left: 2px;"></li>
+                        <li id="Usuario" class="registrar pull-right"><span id="spanUsuario">REGISTRATE/INICIAR
+                                SESION</span>
+                            <img id="carrito" src="images/carrito.png" width="20" height="20"
+                                style="margin-left:10; padding-left: 2px;"></li>
                     </ul>
                 </div>
             </div>
@@ -85,7 +90,8 @@
         <div class="modal-dialog modal-sm" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Registrarse</h4>
                 </div>
                 <div class="modal-body">
@@ -116,7 +122,8 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary registrarButton" style="background-color:#424049; border: 0 none; ">Registrarse</button>
+                    <button type="button" class="btn btn-primary registrarButton"
+                        style="background-color:#424049; border: 0 none; ">Registrarse</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
                 </div>
             </div>
@@ -157,16 +164,18 @@
 
 
 
-                    <img id="corazon" src="images/corazon.png" class="pull-right" width="60px;" height="60px;" style="margin-left:10px;">
+                    <img id="corazon" src="images/corazon.png" class="pull-right" width="60px;" height="60px;"
+                        style="margin-left:10px;">
 
                     <br>
 
 
 
 
-                    <div style="text-align: center; font-size: 30px;padding-top:50px;">
-                        <span>LO MAS NUEVO</span>
-                        <hr>
+                    <div style="text-align: center; font-size: 25px; padding-top:50px; color: #C9B8C3;">
+                        <div style="background-color:#424049; padding: 11px;  opacity: 0.8;">
+                            <span>LO MAS NUEVO</span></div>
+                        <hr style="border-color: #C9B8C3;">
                     </div>
                     <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
@@ -230,15 +239,17 @@
                     <br>
 
 
-                    <div style="text-align: center; font-size: 30px;">
-                        <span>TENDENCIAS</span>
-                        <hr>
+                    <div style="text-align: center; font-size: 25px; padding-top:50px; color: #C9B8C3;">
+                        <div style="background-color:#424049; padding: 11px;  opacity: 0.8;">
+                            <span>TENDENCIAS</span>
+                        </div>
+                        <hr style="border-color: #C9B8C3;">
                     </div>
-                    <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
+                    <div id="carouseltendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
-                            <li data-target="#carousel-tendencias" data-slide-to="0" class=""></li>
-                            <li data-target="#carousel-tendencias" data-slide-to="1" class="active"></li>
+                            <li data-target="#carouseltendencias" data-slide-to="0" class=""></li>
+                            <li data-target="#carouseltendencias" data-slide-to="1" class="active"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox" style=" width:100%; height: 250px !important;">
                             <div class="item next left">
@@ -295,9 +306,11 @@
                     <br>
                     <br>
 
-                    <div style="text-align: center; font-size: 30px;">
-                        <span>LO MAS DESTACADO</span>
-                        <hr>
+                    <div style="text-align: center; font-size: 25px; padding-top:50px; color: #C9B8C3;">
+                        <div style="background-color:#424049; padding: 11px;  opacity: 0.8;">
+                        <span>LO MAS DESTACADO</span> 
+                        </div>
+                        <hr style="border-color: #C9B8C3;">
                     </div>
                     <div id="carousel-destacado" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
@@ -315,12 +328,14 @@
                                     </div>
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img src="images/lomasdestacado/primavera-verano.png" class="img-responsive">
+                                            <img src="images/lomasdestacado/primavera-verano.png"
+                                                class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img src="images/lomasdestacado/levantarsetemprano.png" class="img-responsive">
+                                            <img src="images/lomasdestacado/levantarsetemprano.png"
+                                                class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
@@ -334,7 +349,8 @@
                                 <div class="row">
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img src="images/lomasdestacado/primavera-verano.png" class="img-responsive">
+                                            <img src="images/lomasdestacado/primavera-verano.png"
+                                                class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
@@ -344,7 +360,8 @@
                                     </div>
                                     <div class="col-xs-3">
                                         <a href="#" class="thumbnail">
-                                            <img src="images/lomasdestacado/levantarsetemprano.png" class="img-responsive">
+                                            <img src="images/lomasdestacado/levantarsetemprano.png"
+                                                class="img-responsive">
                                         </a>
                                     </div>
                                     <div class="col-xs-3">
@@ -360,9 +377,11 @@
                     <br>
                     <br>
 
-                    <div style="text-align: center; font-size: 30px;">
+                    <div style="text-align: center; font-size: 25px; padding-top:50px; color: #C9B8C3;">
+                        <div style="background-color:#424049; padding: 11px;  opacity: 0.8;">
                         <span>VIDEOS</span>
-                        <hr>
+                        </div>
+                        <hr style="border-color: #C9B8C3;">
                     </div>
                     <div id="carousel-videos" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
@@ -533,7 +552,7 @@
                         <!-- compras -->
                         <div id="compras">
                             <div class="row">
-                           
+
                                 <div class="col-xs-3">
                                     <a href="#" class="thumbnail">
                                         <img src="images/perfil/compras/buzorosa.png" class="img-responsive">
@@ -554,17 +573,18 @@
                 <div id="pagina-protagonista">
 
                     <div style="text-align: left; font-size: 25px; padding-top:20px;">
-                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
+                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20"
+                            height="20"></img><span>
                             PROTAGONISTA</span>
                         <hr>
                     </div>
 
 
-                    
+
                     <div id="carouseldestacado" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
                         <ol class="carousel-indicators" style="bottom: -35px !important;">
-                            <li data-target="#carouseldestacado" data-slide-to="0" ></li>
+                            <li data-target="#carouseldestacado" data-slide-to="0"></li>
                             <li data-target="#carouseldestacado" data-slide-to="1" class="active"></li>
                         </ol>
                         <div class="carousel-inner" role="listbox" style=" width:100%; height: 250px !important;">
@@ -670,8 +690,10 @@
 
 
                     <div style="text-align: left; font-size: 25px;padding-top:25px;">
-                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
-                            PROTAGONISTA</span><img id="flecha" src="images/flechita.png" width="20" height="20"></img><span>
+                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="20"
+                            height="20"></img><span>
+                            PROTAGONISTA</span><img id="flecha" src="images/flechita.png" width="20"
+                            height="20"></img><span>
                             MODA SUSTENTABLE</span>
 
 
