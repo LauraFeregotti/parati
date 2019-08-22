@@ -37,7 +37,8 @@
     </style>
 </head>
 
-<body style="background-color:rgba(255, 255, 255, 0.5); background-image:url(images/background2.jpg) ; background-attachment: fixed;">
+<body
+    style="background-color:rgba(255, 255, 255, 0.5); background-image:url(images/background2.jpg) ; background-attachment: fixed;">
 
 
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -171,7 +172,7 @@
 
 
 
-<!--<div class="container">
+                    <!--<div class="container">
     <div class="row">
         <div class="col " style="text-align: center; font-size: 21px; padding-top:45px; color: #C9B8C3; background-color:#424049; padding: 11px; opacity: 0.8;">
             <span>LO MAS NUEVO</span>
@@ -180,12 +181,12 @@
     </div>
     <hr style="border-color: #C9B8C3;">
 </div> -->
-                     
+
                     <div style="text-align: center; font-size: 19px; padding-top:45px; color: #C9B8C3;">
                         <div style="background-color:black; padding: 1px;  opacity: 0.8;">
-                            <span >LO MAS NUEVO</span>
-                            </div>
-                    </div> 
+                            <span>LO MAS NUEVO</span>
+                        </div>
+                    </div>
                     <hr style="border-color:#C9B8C3; padding:1px; ">
                     <div id="carousel-tendencias" class="carousel slide" data-ride="carousel" style="width:100%;"
                         data-interval="3000">
@@ -318,7 +319,7 @@
 
                     <div style="text-align: center; font-size: 19px; padding-top:45px; color: #C9B8C3;">
                         <div style="background-color:black; padding: 1px;  opacity: 0.8;">
-                        <span>LO MAS DESTACADO</span> 
+                            <span>LO MAS DESTACADO</span>
                         </div>
                         <hr style="border-color: #C9B8C3; padding: 1px;">
                     </div>
@@ -389,7 +390,7 @@
 
                     <div style="text-align: center; font-size: 19px; padding-top:45px; color: #C9B8C3;">
                         <div style="background-color: black; padding: 1px;  opacity: 0.8;">
-                        <span>VIDEOS</span>
+                            <span>VIDEOS</span>
                         </div>
                         <hr style="border-color: #C9B8C3; padding: 1px;">
                     </div>
@@ -582,9 +583,9 @@
 
                 <div id="pagina-protagonista">
 
-                    <div style="text-align: left; font-size: 25px; padding-top:20px;">
-                        <span> MODA</span> <img id="flecha" src="images/flechita.png"   width="12"
-                            height="12" ></img>  <span>
+                    <div style="text-align: left; font-size: 25px; padding-top:15px; margin-top:15px;">
+                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="12" height="12" style="padding: 1px;"></img>
+                        <span>
                             PROTAGONISTA</span>
                         <hr style="border-color: white; ">
                     </div>
@@ -668,10 +669,15 @@
                 </div>
 
                 <div id="pagina-carrito">
-                    <div style="text-align: left; font-size: 25px;padding-top:25; margin-top: 11px;">
-                        <u> <span> MI CARRITO DE COMPRAS </span> </u>
-
-                        <img src="images/total.png" class="img-responsive center-block" />
+                    <div style="text-align: left; font-size: 25px; padding-top:15px; margin-top: 15px;">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <span> MI CARRITO DE COMPRAS </span>
+                            </div>
+                            <div class="col-lg-4">
+                                <img src="images/total.png" class="img-responsive " />
+                            </div>
+                        </div>
                         <hr>
                     </div>
 
@@ -697,24 +703,19 @@
                 </div>
 
                 <div id="pagina-NOTA">
+                    <div class="row" style="text-align: left; font-size: 25px; padding-top:15px; margin-top: 15px;">
 
-
-                    <div style="text-align: left; font-size: 25px;padding-top:25px;">
-                        <span> MODA</span> <img id="flecha" src="images/flechita.png" width="12"
-                            height="12"></img><span>
-                            PROTAGONISTA</span><img id="flecha" src="images/flechita.png" width="12"
-                            height="12"></img><span>
+                        <span> MODA</span> <img src="images/flechita.png" width="12" height="12" style="padding: 1px;" > <span>
+                            PROTAGONISTA</span><img src="images/flechita.png" width="12" height="12" style="padding: 1px;"> <span>
                             MODA SUSTENTABLE</span>
 
-
-                        <hr style="border-color: white; ">
                     </div>
-
+                    <hr style="border-color: white; ">
                     <div class="row">
                         <div class="col-md-3">
                             <a href="#" class="thumbnail">
 
-                                <img src="images/nota/foto2.jpg" class="img-responsive">
+                                <img src="images/nota/foto6.jpg" class="img-responsive" style="padding:5px;">
                             </a>
                         </div>
 
@@ -728,19 +729,16 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-md-3">
-                            <a href="#" class="thumbnail">
 
-                                <img src="images/nota/foto1.jpg" class="img-responsive">
-                            </a>
-                        </div>
-                        <div class="col-md-8">
+                        <div class="col-lg-offset-3 col-md-8">
                             <a href="#" class="thumbnail">
 
                                 <img src="images/nota/comentarnota.png" class="img-responsive">
                             </a>
                         </div>
-                        <div class="col-md-4">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-offset-3 col-md-4">
                             <a href="#" class="thumbnail">
 
                                 <img src="images/nota/foto3.jpg" class="img-responsive">
@@ -753,6 +751,7 @@
                             </a>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -772,9 +771,10 @@
 
                             <li class="dropdown paddingbarralateral ">
                                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">MODA
-                                    <span ></span> </a>
-                                <ul class="dropdown-menu modadropdown" >
-                                    <li><a id="clickModa" class="submenu" style="font-size: 17px;"  href="#">protagonista</a></li>
+                                    <span></span> </a>
+                                <ul class="dropdown-menu modadropdown">
+                                    <li><a id="clickModa" class="submenu" style="font-size: 17px;"
+                                            href="#">protagonista</a></li>
                                     <li><a class="submenu" style="font-size: 17px;" href="#">editoriales</a></li>
                                     <li><a class="submenu" style="font-size: 17px;" href="#">imprescindibles</a></li>
                                 </ul>
