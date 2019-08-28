@@ -88,7 +88,7 @@ $(document).ready(function()
     {
         $("#myModal").modal('hide');
         console.log('Usuario Registrado');
-        $('#spanUsuario').text( $('#nombreField').val().toUpperCase() );
+        $('#spanUsuario').text( $('#nombreField').val() );
         $('#perfilUsuario').text( $('#nombreField').val() );
 
         $( '#carrito' ).show();
