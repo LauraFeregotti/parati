@@ -30,8 +30,19 @@
             margin-right: 33px;
         }
 
+        .nav>li>a:focus, .nav>li>a:hover{
+            border-radius: 3px;
+        }
+
+       
+
         .paddingbarralateral {
-            padding-bottom: 10px;
+            padding: 8px;
+
+        }
+
+        a.menu {
+            text-align: left;
         }
     </style>
 </head>
@@ -64,10 +75,10 @@
 
                 <div class="nav navbar-right">
                     <ul class="nav navbar-nav">
-                        <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo-button.png" width="20"
-                                    height="20"></a></li>
-                        <li><a href="https://www.facebook.com"><img src="images/socials/facebook-logo-button.png" width="20"
-                                    height="20"></a></li>
+                        <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo-button.png"
+                                    width="20" height="20"></a></li>
+                        <li><a href="https://www.facebook.com"><img src="images/socials/facebook-logo-button.png"
+                                    width="20" height="20"></a></li>
                         <li><a href="https://www.instagram.com"><img src="images/socials/instagram-logo.png" width="20"
                                     height="20"></a></li>
                         <li><a href="https://www.twitch.com"><img src="images/socials/pinterest-logo.png" width="20"
@@ -108,7 +119,8 @@
                                 </tr>
                                 <tr>
                                     <td>Usuario&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                                    <td><input type="text" name="usernameField" id="usernameField" style="width:170px"></td>
+                                    <td><input type="text" name="usernameField" id="usernameField" style="width:170px">
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Clave</td>
@@ -132,9 +144,9 @@
     </div>
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div id="pagina" class="col-sm-11 col-md-11">
+            <div id="pagina" class="col-sm-9 col-md-9 col-lg-offset-1 col-lg-9 col-lg-offset-1 ">
 
                 <div id="pagina-principal">
                     <div style="margin-top: 25px; padding:5px; background-color: #f8f8f8; border-radius: 3px">
@@ -182,7 +194,8 @@
     <hr style="border-color: #C9B8C3;">
 </div> -->
 
-                    <div style="text-align: center; font-size: 19px; padding-top:45px; margin-top:10px; ; color: #C9B8C3;">
+                    <div
+                        style="text-align: center; font-size: 19px; padding-top:45px; margin-top:10px; ; color: #C9B8C3;">
                         <div style="background-color:black; padding: 1px;  opacity: 0.8;">
                             <span>Lo mas nuevo</span>
                         </div>
@@ -454,6 +467,9 @@
 
                 </div>
 
+
+
+
                 <div id="pagina-usuario">
 
                     <div id="perfilEncabezado">
@@ -467,9 +483,12 @@
                     </div>
                     <div style="padding-top:15px;">
                         <div class="btn-group btn-group-justified" role="group" aria-label="Justified button group">
-                            <span id="clickMeGustan" class="btn btn-primary-outline" role="button" style="font-size: 17px; padding: 7px;">Me gustan</span>
-                            <span id="clickNotasParaMi" class="btn btn-default" role="button" style="font-size: 17px; padding: 7px;"> Notas para mi</span>
-                            <span id="clickCompras" class="btn btn-default" role="button" style="font-size: 17px; padding: 7px;"> Compras</span>
+                            <span id="clickMeGustan" class="btn btn-primary-outline" role="button"
+                                style="font-size: 17px; padding: 7px;">Me gustan</span>
+                            <span id="clickNotasParaMi" class="btn btn-default" role="button"
+                                style="font-size: 17px; padding: 7px;"> Notas para mi</span>
+                            <span id="clickCompras" class="btn btn-default" role="button"
+                                style="font-size: 17px; padding: 7px;"> Compras</span>
                         </div>
 
                         <!-- me gustan -->
@@ -676,7 +695,8 @@
                                 <span> Mi carrito de compras </span>
                             </div>
                             <div class="col-lg-4">
-                                <img src="images/total2.png" class="img-responsive " style="width: 246px; height: 39.917px;">
+                                <img src="images/total2.png" class="img-responsive "
+                                    style="width: 246px; height: 39.917px;">
                             </div>
                         </div>
                         <hr>
@@ -704,10 +724,13 @@
                 </div>
 
                 <div id="pagina-NOTA">
-                    <div class="row" style="text-align: left; font-size: 25px; padding-top:15px;  margin-top: 15px; padding-left: 19px;">
+                    <div class="row"
+                        style="text-align: left; font-size: 25px; padding-top:15px;  margin-top: 15px; padding-left: 19px;">
 
-                        <span>Moda</span> <img src="images/flechita.png" width="12px;" height="12px;" style="padding: 1px;">
-                        <span>Protagonista</span><img src="images/flechita.png" width="12px;" height="12px;" style="padding: 1px;"> 
+                        <span>Moda</span> <img src="images/flechita.png" width="12px;" height="12px;"
+                            style="padding: 1px;">
+                        <span>Protagonista</span><img src="images/flechita.png" width="12px;" height="12px;"
+                            style="padding: 1px;">
                         <span>Moda sustentable</span>
 
                     </div>
@@ -758,62 +781,67 @@
             </div>
 
             <!-- sub menu cuando se selecciona una opcion en el menu -->
-            <div class="menuprop">
-                <ul></ul>
-            </div>
 
-            <div class="col-sm-1">
 
-                <div style=" background-color:#C9B8C3; width:128px; margin-left: 44px; opacity: 0.8; padding-top: 7px;">
+            <div class="col-md-1 col-lg-offset-1  col-lg-1"
+                style=" background-color:#C9B8C3;   opacity: 0.8; padding:0px; padding-top: 30px; padding-bottom: 30px;">
 
-                    <div class="row">
 
-                        <ul id="menu_menu" class="nav navbar-nav nav-pills " style="padding: 22px;">
 
-                            <li class="dropdown paddingbarralateral" style="padding-top: 6px; text-align: center">
-                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Moda
-                                    <span></span> </a>
-                                <ul class="dropdown-menu modadropdown">
-                                    <li><a id="clickModa" class="submenu" style="font-size: 19px;"
-                                            href="#">Protagonista</a></li>
-                                    <li><a class="submenu" style="font-size: 19x;" href="#">Editoriales</a></li>
-                                    <li><a class="submenu" style="font-size: 19px;" href="#">Imprescindibles</a></li>
-                                </ul>
+
+                <ul id="menu_menu" class="nav navbar-nav ">
+
+                    <li class="dropdown paddingbarralateral" style="margin:0px; width:100%; margin-left: 8%; ">
+                        <a class="menu" data-toggle="dropdown" href="#">Moda
+                            <span></span> </a>
+                        <ul class="dropdown-menu modadropdown">
+                            <li><a id="clickModa" class="submenu" style="font-size: 19px;" href="#">Protagonista</a>
                             </li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px; "><a class="menu "
-                                    href="#">Belleza</a></li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu "
-                                    href="#">Cocina</a></li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu " href="#">Deco</a>
-                            </li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu " href="#">Mama</a>
-                            </li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu "
-                                    href="#">Novias</a></li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu "
-                                    href="#">Tejidos</a></li>
-
-                            <li class="paddingbarralateral" style="padding-top: 6px;"><a class="menu "
-                                    href="#">Noticias</a></li>
+                            <li><a class="submenu" style="font-size: 19x;" href="#">Editoriales</a></li>
+                            <li><a class="submenu" style="font-size: 19px;" href="#">Imprescindibles</a></li>
                         </ul>
+                    </li>
 
-                    </div>
+                    <li class="paddingbarralateral" style="margin:0px; margin-left: 8%; width:100% "><a class="menu "
+                            href="#">Belleza</a></li>
 
-                </div>
+                    <li class="paddingbarralateral" style="  margin:0px; width:100%; margin-left: 8%;"><a class="menu "
+                            href="#">Cocina</a>
+                    </li>
+
+                    <li class="paddingbarralateral" style=" margin:0px; width:100%; margin-left: 8%;  "><a class="menu "
+                            href="#">Deco</a>
+                    </li>
+
+                    <li class="paddingbarralateral" style=" margin:0px; width:100%; margin-left: 8%; "><a class="menu "
+                            href="#">Mama</a>
+                    </li>
+
+                    <li class="paddingbarralateral" style="margin:0px; width:100%; margin-left: 8%; "><a class="menu "
+                            href="#">Novias</a>
+                    </li>
+
+                    <li class="paddingbarralateral" style="margin:0px; width:100%; margin-left: 8%; "><a class="menu "
+                            href="#">Tejidos</a>
+                    </li>
+
+                    <li class="paddingbarralateral" style="margin:0px; width:100%; margin-left: 8%; "><a class="menu "
+                            href="#">Noticias</a>
+                    </li>
+                </ul>
+
+
 
             </div>
+
+
 
         </div>
+
     </div>
     <footer style="margin-top: 150px; font-size: 19px; text-align: center; padding: 45px;">
         <div class="row">
-            <div class="col-lg-4" >
+            <div class="col-lg-4">
                 <h2>Información</h2>
                 <h3>Director</h3>
                 <h4>Juan Carlos Porras</h4>
@@ -832,8 +860,8 @@
                 <div class="row">
                     <div class="col-lg-offset-2 col-lg-8 col-lg-offset-2 " style="margin-top: 65px;">
                         <ul class="nav navbar-nav">
-                            <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo-button.png" width="20"
-                                        height="20"></a></li>
+                            <li><a href="https://www.twitch.com"><img src="images/socials/twitter-logo-button.png"
+                                        width="20" height="20"></a></li>
                             <li><a href="https://www.facebook.com"><img src="images/socials/facebook-logo-button.png"
                                         width="20" height="20"></a></li>
                             <li><a href="https://www.instagram.com"><img src="images/socials/instagram-logo.png"
@@ -851,7 +879,7 @@
 
 
             </div>
-            <div class="col-lg-4" >
+            <div class="col-lg-4">
                 <h2>Contenidos</h2>
                 <h4>Moda</h4>
                 <h4>Belleza</h4>
